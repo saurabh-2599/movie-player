@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height:10vh;
+            width:100%;
+
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #6AC47E;
+
+        }
+
+        header h1{
+            font-size: 26px;
+            ;
+            text-align: center;
+            padding:0px 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style-type:none;
+        }
+        .navbar-links{
+            padding:10px;
+            background:#B9345A;
+            margin-right:40px;
+            font-size: 20px;
+            
+        }
+        .navbar-links a{
+            color:black;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Movies</h1>
+        <nav>
+            <ul class="navbar-items">
+                <li class="navbar-links"><a href="/">Playlists</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form action="/" method="">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label for="thumbnail">thumbnail</label>
+                <input type="file" name="thumbnail">
+            </div>
+            <div class="form-group">
+                <label for="video">video</label>
+                <input type="file" name="video">
+            </div>
+            <div class="form-group">
+                <input type="submit" name="submit">
+            </div>
+            
+        </form>
+    </section>
+
+</body>
+</html>
